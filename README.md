@@ -1,73 +1,97 @@
-# Welcome to your Lovable project
+# Laksh Digital Canvas - Interactive Portfolio
 
-## Project info
+This is a modern, interactive personal portfolio website built to showcase projects, skills, and experience. It features a dynamic 3D starry background, responsive design, and engaging animations.
 
-**URL**: https://lovable.dev/projects/13f2e7d3-ac06-4cf6-9838-f4ac2217455b
+## Live Demo
 
-## How can I edit this code?
+[Link to your deployed portfolio (e.g., on Netlify)]
 
-There are several ways of editing your application.
+## Technologies Used
 
-**Use Lovable**
+*   **Frontend:**
+    *   React
+    *   Vite
+    *   TypeScript
+    *   Tailwind CSS
+    *   React Three Fiber (for Three.js integration)
+    *   Three.js
+    *   Lucide React (for icons)
+    *   Sonner (for toast notifications)
+    *   Shadcn/ui (components like Card, Button, Badge, etc.)
+*   **Form Handling:**
+    *   Formspree (for the contact form)
+*   **Linting/Formatting:**
+    *   ESLint
+    *   Prettier (implied via Tailwind CSS setup)
+*   **Package Manager:**
+    *   Bun (as indicated by `bun.lockb`)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/13f2e7d3-ac06-4cf6-9838-f4ac2217455b) and start prompting.
+## Key Features
 
-Changes made via Lovable will be committed automatically to this repo.
+*   **Interactive 3D Background:** A dynamic starry background created with Three.js and React Three Fiber, which changes color based on the selected theme (light/dark).
+*   **Responsive Design:** Optimized for various screen sizes, ensuring a seamless experience on desktop, tablet, and mobile devices.
+*   **Single-Page Navigation:** Smooth scrolling to different sections of the portfolio (Hero, About, Projects, Resume, Contact).
+*   **Project Showcase:** Detailed project cards with descriptions, tags, live demo links, and GitHub repository links (where applicable).
+*   **Theming:** Light and dark mode support, with theme-aware text colors and background elements.
+*   **Contact Form:** Functional contact form integrated with Formspree to receive messages directly via email.
+*   **Animations:** Subtle animations on page load and scroll to enhance user experience.
+*   **Custom Fonts:** Integration of Google Fonts (e.g., General Sans) for a modern look.
 
-**Use your preferred IDE**
+## Setup and Installation
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+1.  **Clone the repository:**
+    ```bash
+    git clone <your-repository-url>
+    cd laksh-digital-canvas-main
+    ```
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+2.  **Install dependencies using Bun:**
+    ```bash
+    bun install
+    ```
 
-Follow these steps:
+3.  **Environment Variables (if any):**
+    *   If you have any environment variables (e.g., for Formspree if you were using a more complex setup, or other API keys), create a `.env` file in the root directory and add them there. For this project, the Formspree endpoint is hardcoded, but for future projects, consider environment variables for such configurations.
+    *   Example `.env` structure:
+        ```
+        VITE_FORMSPREE_ENDPOINT=your_formspree_endpoint_url
+        ```
+        And then use `import.meta.env.VITE_FORMSPREE_ENDPOINT` in your code.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## Available Scripts
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+In the project directory, you can run the following commands:
 
-# Step 3: Install the necessary dependencies.
-npm i
+*   **`bun dev` or `bun run dev`**
+    Runs the app in development mode.
+    Open [http://localhost:5173](http://localhost:5173) (or the port Vite assigns) to view it in the browser.
+    The page will reload if you make edits.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+*   **`bun run build`**
+    Builds the app for production to the `dist` folder.
+    It correctly bundles React in production mode and optimizes the build for the best performance.
 
-**Edit a file directly in GitHub**
+*   **`bun run lint`**
+    Lints the project files using ESLint to check for code quality and style issues.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+*   **`bun run preview`**
+    Serves the production build locally to preview it before deployment.
 
-**Use GitHub Codespaces**
+## Deployment
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+This project can be easily deployed to static hosting providers like:
 
-## What technologies are used for this project?
+*   **Netlify:** Connect your Git repository, and Netlify will automatically build and deploy your site. Configure the build command as `bun run build` and the publish directory as `dist`.
+*   **Vercel:** Similar to Netlify, Vercel offers seamless deployment for Vite projects.
+*   **GitHub Pages:** Can be configured to deploy the `dist` folder.
 
-This project is built with:
+## Contact
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+*   **Portfolio:** [Your Portfolio Link]
+*   **Email:** singhlakshaditya@gmail.com
+*   **LinkedIn:** https://www.linkedin.com/in/lakshaditya-singh/
+*   **Instagram:** https://instagram.com/singh_lakshaditya
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/13f2e7d3-ac06-4cf6-9838-f4ac2217455b) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+*This README was partially generated with assistance from an AI coding agent.*
