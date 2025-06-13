@@ -1,4 +1,4 @@
-# Laksh Digital Canvas - Interactive Portfolio
+# Lakshaditya- Interactive Portfolio
 
 This is a modern, interactive personal portfolio website built to showcase projects, skills, and experience. It features a dynamic 3D starry background, responsive design, and engaging animations.
 
